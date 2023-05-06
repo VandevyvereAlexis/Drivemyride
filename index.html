@@ -17,7 +17,6 @@
         <link rel="stylesheet" href="style.css">
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
         <!-- Fontawesome -->
@@ -32,34 +31,34 @@
 
         <!-- Header
         ================================= -->
-        <header id="header">
+        <header id="header-home">
 
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg fixed-top " data-bs-theme="dark">
-                <div class="container">
+            <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+                <div class="container-fluid">
 
-                    <a href="#navbar">
+                    <a href="#navbar" class="mx-5">
                         <img src="./images/drivemyride.png" alt="Drivemyride">
                     </a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav ms-auto">
+                        <ul class="navbar-nav ms-auto mx-5">
 
                             <li class="nav-item">
-                                <a class="nav-link mx-4 fw-bold" aria-current="page" href="#navbar" id="lien-accueil">Accueil</a>
+                                <a class="nav-link mx-4 pb-1 position-relative text-center fw-bold" aria-current="page" href="#navbar" id="lien-accueil">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light mx-4" href="./annonces.html">Annonces</a>
+                                <a class="nav-link text-light mx-4 pb-1 position-relative text-center" href="./annonces.html">Annonces</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light mx-4" href="#catégories">Catégories</a>
+                                <a class="nav-link text-light mx-4 pb-1 position-relative text-center" href="#catégories">Catégories</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light mx-4" href="./contact.html">Contact</a>
+                                <a class="nav-link text-light mx-4 pb-1 position-relative text-center" href="./contact.html">Contact</a>
                             </li>
 
                         </ul>
@@ -71,12 +70,36 @@
 
             <!-- Accueil -->
             <div class="container-fluid" id="accueil">
-                <img src="./images/fond.jpg" alt="Porsche Carrera">
-                <h2 class="px-3 py-3 text-center"><span>Bientôt</span> en ligne</h2>
-                    <div class="row">
 
-                        <div class="col-md-6">
+                <div class="text-center">
+                    <p class="text-light d-inline position-relative py-1" id="accueil-p">Bientôt en ligne</p>
+                </div>
+
+                    <div class="row col-md-5 position-relative" id="presentation">
+                        <div class="text-center">
+                            <h1>Besoin d'un véhicule ?</h1>
+                            <p class="pb-4 text-light fw-normal">Louez le rapidement et simplement à un particulier.</p>
+
+                            <!-- Modal 1 -->
+                            <button type="button" class="btn btn-primary mx-5 p-3 fw-lighter text-dark bg-" data-bs-toggle="modal" data-bs-target="#exampleModal" id="button-modal">En découvrir plus</button>
                             
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente esse, neque cumque doloremque, vero at saepe consectetur consequatur, eius cupiditate earum tempore nihil corporis repellat! Ea magnam quos excepturi pariatur.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
