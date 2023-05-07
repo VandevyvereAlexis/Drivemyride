@@ -41,7 +41,7 @@
                         <img src="./images/drivemyride.png" alt="Drivemyride">
                     </a>
 
-                    <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="menu-burger">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -49,16 +49,16 @@
                         <ul class="navbar-nav ms-auto mx-5">
 
                             <li class="nav-item">
-                                <a class="nav-link mx-4 pb-1 position-relative text-center fw-bold" aria-current="page" href="#navbar" id="lien-accueil">Accueil</a>
+                                <a class="nav-link mx-4 pb-1 position-relative fw-bold" href="./index.html" id="lien-accueil">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light mx-4 pb-1 position-relative text-center" href="./annonces.html">Annonces</a>
+                                <a class="nav-link text-light mx-4 pb-1 position-relative" href="./annonces.html">Annonces</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light mx-4 pb-1 position-relative text-center" href="#catégories">Catégories</a>
+                                <a class="nav-link text-light mx-4 pb-1 position-relative" href="#catégories">Catégories</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light mx-4 pb-1 position-relative text-center" href="./contact.html">Contact</a>
+                                <a class="nav-link text-light mx-4 pb-1 position-relative" href="./contact.html">Contact</a>
                             </li>
 
                         </ul>
@@ -69,60 +69,54 @@
 
 
             <!-- Accueil -->
-            <div class="container-fluid" id="accueil">
+            <div class="container" id="accueil">
 
-                <div class="text-center">
-                    <p class="text-light d-inline position-relative py-1" id="accueil-p">Bientôt en ligne</p>
-                </div>
-
-                    <div class="row col-md-5 position-relative" id="presentation">
-                        <div class="text-center">
-                            <h1>Besoin d'un véhicule ?</h1>
-                            <p class="pb-4 text-light fw-normal">Louez le rapidement et simplement à un particulier.</p>
-
-                            <!-- Modal 1 -->
-                            <button type="button" class="btn btn-primary mx-5 p-3 fw-lighter text-dark bg-" data-bs-toggle="modal" data-bs-target="#exampleModal" id="button-modal">En découvrir plus</button>
-                            
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente esse, neque cumque doloremque, vero at saepe consectetur consequatur, eius cupiditate earum tempore nihil corporis repellat! Ea magnam quos excepturi pariatur.</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <p class="text-light">Bientôt en ligne</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <p class="text-light">Bientôt en ligne</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <p class="text-light">Bientôt en ligne</p>
                         </div>
                     </div>
                 </div>
 
+                <div class="row col-md-12 position-relative" id="presentation">
+                    <h1 id="presentation-titre">Besoin d'un véhicule ?</h1>
+                    <p class="pb-3 text-light">Louez le rapidement et simplement <br> à un particulier.</p>
 
+                    <div class="col-md-12">
+
+                        <!-- Button modal -->
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="button-modal">En découvrir plus</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content text-light" id="modal">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title" id="staticBackdropLabel">Présentation</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body fs-6">
+                                        Bonjour et bienvenue sur Drivemyride, plateforme de location de véhicules entre particuliers ! Que vous soyez à la recherche d'une voiture pour une escapade en famille, d'un van pour un road trip entre amis, cette plateforme vous permettra de trouver le véhicule parfait en quelques clics. <br><br> Ce site est entièrement conçu pour faciliter la recherche de véhicules à proximité de chez vous, ainsi que pour affiner votre recherche selon la catégorie de véhicule que vous souhaitez louer. Grâce à une interface conviviale et facile à utiliser, vous pourrez facilement trouver le véhicule idéal pour votre prochaine aventure. <br><br> La plateforme offre également un service de location de qualité, sécurisé et convivial entre particuliers. Vous pourrez communiquer directement avec les propriétaires des véhicules, fixer les modalités de location et organiser votre voyage en toute tranquillité. <br><br> Que vous soyez un propriétaire de véhicule cherchant à rentabiliser votre voiture, ou un voyageur à la recherche d'un moyen de transport pratique et économique, Drivemyride répondra à tous vos besoins. <br><br> Et ce n'est pas tout ! le site est également conçu pour être entièrement responsive, ce qui signifie qu'il sera accessible et facile à utiliser depuis tous vos appareils, que ce soit sur votre ordinateur, votre tablette ou votre téléphone portable. <br><br> N'attendez plus pour découvrir le site !
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>  
 
         </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
