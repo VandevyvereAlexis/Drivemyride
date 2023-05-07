@@ -130,6 +130,56 @@ header .show {
 }
 
 
+
+/* Main 
+======================= */
+
+    /* Section 1 avantages */
+
+#avantages h2 {
+    color: #04fd83;
+    animation: apparition 0.7s ease-in-out;
+}
+
+#avantages h2::after {
+    display: block;
+    height: 2px;
+    background-color: #04fd83;
+    width: 100px;
+    content: "";
+    margin: 0;
+    margin-top: 6px;
+}
+
+    /* Cartes */
+
+#avantages .m-1 {
+    background-color: transparent;
+    border-color: #04fd83;
+    animation: apparition 0.7s ease-in-out;
+}
+
+#avantages h5 {
+    color: #04fd83;
+}
+
+    /* Section 2 catégories */
+
+#categories h2 {
+    animation: apparition 0.7s ease-in-out;
+}
+    
+#categories h2::after {
+    display: block;
+    height: 2px;
+    background-color: #04fd83;
+    width: 65px;
+    content: "";
+    margin: 0;
+    margin-top: 6px;
+}
+
+
 /* Keyframe 
 ======================= */
 @keyframes apparition {
@@ -147,7 +197,7 @@ header .show {
 /* Media queries 
 ======================= */
 
-/* 991px */
+    /* 991px */
 @media screen and ( max-width: 991px ) {
 
     /* Header */
