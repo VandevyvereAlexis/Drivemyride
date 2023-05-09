@@ -494,6 +494,47 @@ main #avantages-2 {
     margin-top: 6px;
 }
 
+#cards-annonces .h-100 {
+    background-color: transparent;
+    border: 0.5px solid azure;
+    box-shadow: 3px 3px 5px azure;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+#cards-annonces .h-100:hover {
+    transition: 0.3s;
+    background-color: #04fd8524;
+}
+
+#cards-annonces .card-header {
+    border-color: #04fd83;
+}
+
+#cards-annonces img {
+    border-bottom: 1px solid #04fd83;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#cards-annonces a {
+    background-color: transparent;
+    border-color: #04fd83;
+    transition: 0.3s;
+}
+
+#cards-annonces a:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+#cards-annonces span {
+    display: inline-block;
+    background-color: #04fd83;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
 
         /* Section carte google
         ===================== */
