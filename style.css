@@ -11,6 +11,9 @@ body {
 
 
 
+/* Index.html
+================================================================================================================ */
+
 /* Header 
 ================================================================== */
 
@@ -410,6 +413,64 @@ main #avantages-2 {
 
 #footer .mt-5 {
     border-top: 1px solid azure;
+    background-color: #00233372;
+}
+
+
+
+
+/* Contact.html
+================================================================================================================ */
+
+/* Main 
+================================================================== */
+
+        /* Section Formualire de contact
+        ===================== */
+
+#formulaire-contact {
+    background-image: linear-gradient(to right, #ffffff24, #00000015), url(./images/fond-contact.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#formulaire-contact #formulaire {
+    border: 1px solid azure;
+    background-color: transparent;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 3px 5px 5px #002333;
+}
+
+#formulaire-contact #formulaire:hover {
+    transition: 0.3s;
+    background-color: #04fd8507;
+    transform: scale(1.1);
+    backdrop-filter: blur(1px);
+}
+
+#formulaire-contact input {
+    background-color: #0023335f;
+    border-color: #04fd83;
+}
+
+#formulaire-contact textarea {
+    background-color: #0023335f;
+    border-color: #04fd83;
+}
+
+#formulaire-contact button {
+    background-color: transparent;
+    border-color: azure;
+}
+
+#formulaire-contact button:hover {
+    background-color: #04fd83;
+    border-color: #04fd83;
+    color: #002333;
 }
 
 
