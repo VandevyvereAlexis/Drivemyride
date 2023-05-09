@@ -475,6 +475,36 @@ main #avantages-2 {
 
 
 
+/* Annonces.html
+================================================================================================================ */
+
+/* Main 
+================================================================== */
+
+        /* Section cards annonces
+        ===================== */
+
+#cards-annonces h1::after {
+    display: block;
+    height: 2px;
+    background-color: #04fd83;
+    width: 65px;
+    content: "";
+    margin: 0;
+    margin-top: 6px;
+}
+
+
+        /* Section carte google
+        ===================== */
+
+#map iframe {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+
+
 /* Keyframe 
 ================================================================== */
 
