@@ -443,13 +443,13 @@ main #avantages-2 {
     border-radius: 20px;
     transition: 0.3s;
     box-shadow: 3px 5px 5px #002333;
+    backdrop-filter: blur(7px);
 }
 
 #formulaire-contact #formulaire:hover {
     transition: 0.3s;
     background-color: #04fd8507;
     transform: scale(1.1);
-    backdrop-filter: blur(1px);
 }
 
 #formulaire-contact input {
@@ -597,13 +597,6 @@ main #avantages-2 {
         ===================== */
 
 @media screen and ( max-width: 991px ) {
-
-    /* Header */
-    
-    #header-home {
-        background-image: linear-gradient(to bottom, #000000dc, #ffffff1f), url(./images/fond.jpg);
-    }
-
 
     /* Navbar */
 
