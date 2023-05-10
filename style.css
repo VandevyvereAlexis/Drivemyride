@@ -203,11 +203,6 @@ header .show {
     font-size: 17px;
 }
 
-main #avantages-2 {
-    visibility: hidden;
-    display: none;
-}
-
 
         /* Section avantages 2
         ===================== */
@@ -267,6 +262,12 @@ main #avantages-2 {
 #avantages-2 p {
     font-size: 17px;
 }
+
+#avantages-2 {
+    visibility: hidden;
+    display: none;
+}
+
 
         /* Section catégories
         ===================== */
@@ -664,6 +665,8 @@ main #avantages-2 {
         visibility: visible;
         display: flex;
     }
+
+    
 }
 
 
@@ -715,7 +718,7 @@ main #avantages-2 {
 
     #avantages-2 {
         visibility: visible;
-        display:flex;
+        display: flex;
     }
 }
 
