@@ -102,6 +102,10 @@ header .show {
     letter-spacing: 2px;
 }
 
+#accueil #presentation h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 #accueil #presentation-titre {
     color: #04fd83;
     font-size: 2rem;
@@ -149,6 +153,7 @@ header .show {
 
 #avantages h2 {
     animation: apparition 0.7s ease-in-out;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #avantages h2::after {
@@ -209,6 +214,7 @@ header .show {
 
 #avantages-2 h2 {
     animation: apparition 0.7s ease-in-out;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #avantages-2 h2::after {
@@ -274,6 +280,7 @@ header .show {
 
 #categories h2 {
     animation: apparition 0.7s ease-in-out;
+    font-family: 'Josefin Sans', sans-serif;
 }
     
 #categories h2::after {
@@ -341,6 +348,7 @@ header .show {
 
 #categories-2 h2 {
     animation: apparition 0.7s ease-in-out;
+    font-family: 'Josefin Sans', sans-serif;
 }
         
 #categories-2 h2::after {
